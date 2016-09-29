@@ -1,0 +1,88 @@
+SAD Design
+
+ideas:
+ecommerce
+	- Connecting artisan clothing manfuctueres from the pacific north west to the rest of the world. 
+
+Pages:
+	Home page
+	Log In Customer
+	Log In Manufacturer
+	Log In Admin
+	Customer profile page
+	Categories
+	Shopping Cart
+	pay portal
+	contact us
+	about us
+	about the manufacturers
+	Manufacturers profile page
+	product page
+	product editing page
+	product database management
+	search page
+		manufacturer
+		available sizes
+		clothing type
+		mens vs womens
+	
+Database Tables:
+	Products
+		ProductID Primary Key
+		Manufacturer foreign Key
+		Category foreign key
+		size
+		color
+		description
+		retailPrice
+		margin
+		wholesalePrice
+		instock
+		shipping dimensions
+		weight
+		
+	Manufacturers
+		email Primary Key
+		name
+		password 
+		phoneNumber
+		mainContact
+		streetAddress
+		city
+		country
+		postalCode
+	
+	Customer
+		email Primary Key
+		firstName
+		lastName
+		password
+		streetAddress
+		city
+		country
+		postalCode
+		
+	Admins
+		email Primary Key
+		password
+		fistName
+		lastName
+
+	Categories
+		CategoryName Primary Key
+
+	Orders
+		orderNumber Primary Key
+		customer Foreign Key
+		
+	OrdersProduct
+		Order Primary Key, Foreign Key
+		Product Primary Key, Foreign Key
+		Quantity 
+	
+	
+
+
+		
+
+	
