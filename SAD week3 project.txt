@@ -1,6 +1,8 @@
-lets see.
-SAD Design
 
+SAD Design
+Critical Assumptions
+-We do not keep physical inventory all products shipped from suppliers.
+-We deal with small manufacturers, we use our databases to track orders and customers. 
 ideas:
 ecommerce
 	- Connecting artisan clothing manfuctueres from the pacific north west to the rest of the world. 
