@@ -1,0 +1,68 @@
+﻿ul, li, a, div {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /*margin-left: 5%;
+    margin-right: 5%;*/
+}
+#header {
+    background-color: #B22222;
+    padding: 0;
+    padding-top: 1em;  
+    width: 100%;
+}
+#header h1 {
+    color: #FFFFFF;
+    text-align: center;
+}
+#header ul {
+    width=: 100%;
+    list-style-type: none;
+    vertical-align: middle;
+}
+#header ul li {
+    padding-top: 0.5em;
+    font-size: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    width: 16.3%;
+    color: white;
+    text-align: center;
+    height: 2em;
+}
+#header ul a {
+    text-decoration: none;
+    vertical-align: middle;
+    color: white;
+    width: 100%;
+}
+#header ul li:hover {
+    background-color: #DEB887;
+}
+#footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #B22222;
+    padding: 1em;
+    width: 100%;
+}
+#footer p {
+    color: white;
+}
+#footer a {
+    color: white;
+}
+#footer a:hover {
+    color: blue;
+}
+.featuredProduct {
+    float: left;
+    width: 33%;
+}
+.contentBlock:after {
+    content: "";
+    clear: both;
+    display: block;
+}
