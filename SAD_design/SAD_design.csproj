@@ -102,6 +102,7 @@
     <Content Include="manufacturer-login.html" />
     <Content Include="forgot-login.html" />
     <Content Include="manufacturers.html" />
+    <Content Include="customer-profile.html" />
     <Content Include="template.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
