@@ -20,6 +20,11 @@ body {
     right: 5em;
     top: 4em;
 } 
+#header form {
+    position: absolute;
+    right: 15em;
+    top: 8em;
+}
 #header h1 {
     padding: 0;
     padding-top: 2.5em;
@@ -79,5 +84,9 @@ body {
 .categoryBlock {
     width: 25%;
     float: left;
+    padding: 0.5em;
+}
+
+.contentBlock {
     padding: 0.5em;
 }
