@@ -94,7 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="admin-profile - Copy.html" />
+    <Content Include="admin-profile.html" />
     <Content Include="categories.html" />
     <Content Include="shoes1.html" />
     <Content Include="shoes2.html" />
