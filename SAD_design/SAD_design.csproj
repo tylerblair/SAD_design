@@ -94,7 +94,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="customer-login.html" />
     <Content Include="categories.html" />
+    <Content Include="contact-us.html" />
+    <Content Include="about-us.html" />
+    <Content Include="admin-login.html" />
+    <Content Include="manufacturer-login.html" />
+    <Content Include="forgot-login.html" />
+    <Content Include="manufacturers.html" />
     <Content Include="template.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
