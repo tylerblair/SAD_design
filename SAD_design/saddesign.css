@@ -90,3 +90,16 @@ body {
 .contentBlock {
     padding: 0.5em;
 }
+table {
+    width: 100%;
+}
+thead {
+    display: inline-block;
+    width: 100%;
+}
+tbody {
+    height: 300px;
+    display: inline-block;
+    width: 100%;
+    overflow: auto;
+}

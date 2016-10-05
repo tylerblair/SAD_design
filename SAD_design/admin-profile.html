@@ -30,14 +30,21 @@
     <!--Content Area-->
     <div class="contentBlock">
         <h2>S.A.D Design Management Page</h2>
-        <h3>Current Orders</h3>
+        <h3 id="content">Content</h3>
+        <p><a href="#currentOrders">Current Orders</a></p>
+        <p><a href="#products">All Products</a></p>
+        <p><a href="#customers">Customers</a></p>
+        <p><a href="#artisans">Artisans</a></p>
+        <h3 id="currentOrders">Current Orders</h3>
         <table>
             <tr>
                 <th colspan="2">Product</th>
                 <th>Price</th>
                 <th>Quatity</th>
                 <th>Total</th>
-                <th colspan="2">Manufacturer</th>
+                <th>Manufacturer</th>
+                <th>Customer</th>
+                <th></th>
             </tr>
             <tr>
                 <td><a href="hat1.html">Red Line Hat</a></td>
@@ -46,10 +53,12 @@
                 <td>2</td>
                 <td>$90</td>
                 <td>Jenny's Knitting Shop</td>
+                <td><a href="#customers">Jeff Smith</a><br />jeff@smith.com</td>
                 <td><a href="#">Resend PO</a></td>
             </tr>
         </table>
-        <h3>Current Products</h3>
+        <p><a href="#">Back to top</a></p>
+        <h3 id="products">Current Products</h3>
         <table>
             <tr>
                 <th>Product</th>
@@ -57,6 +66,9 @@
                 <th>Price</th>
                 <th>Available</th>
                 <th>Manufacturer</th>
+                <th>Description</th>
+                <th>Image File</th>
+                <th></th>
             </tr>
             <tr>
                 <td><a href="hat1.html">Red Line Hat</a></td>
@@ -64,6 +76,8 @@
                 <td>$45</td>
                 <td>TRUE</td>
                 <td>Jenny's Knitting Shop</td>
+                <td>The Red Line Hat is beautiful peice hand knit is pacific North West. Made from 100% marino wool, it will keep you warm through the regions cold damp winters.</td>
+                <td>images/hats/redline_hat.jpg</td>
             </tr>
             <tr>
                 <td><a href="hat2.html">The Claudia Schulz</a></td>
@@ -71,6 +85,8 @@
                 <td>$55</td>
                 <td>TRUE</td>
                 <td>Jenny's Knitting Shop</td>
+                <td>The Claudia is perfect for a night out on the town ot pair it with your favourite fall outfit for a jaunt through the park. Made from high quality felt.</td>
+                <td>images/hats/claudia-schulz_hat.jpg</td>
             </tr>
             <tr>
                 <td><a href="sweater1.html">Awesome Blue Sweater</a></td>
@@ -78,6 +94,8 @@
                 <td>$99</td>
                 <td>TRUE</td>
                 <td>Jenny's Knitting Shop</td>
+                <td>The awesome blue sweater will be your best friend on a cool autumn day. The hand knitted Cowichan style sweater is made out of 100% merino wool.</td>
+                <td>images/sweaters/blue_sweater.jpg</td>
             </tr>
             <tr>
                 <td><a href="sweater2.html">Cowled Sweater</a></td>
@@ -85,6 +103,8 @@
                 <td>$129</td>
                 <td>TRUE</td>
                 <td>Jenny's Knitting Shop</td>
+                <td>Windy days be warned, the cowled sweater is here. The 100% marino wool sweater features an extra large hood with fashionable two button collar.</td>
+                <td>images/sweaters/cowled_sweater.jpg</td>
             </tr>
             <tr>
                 <td><a href="shoe1.html">Trigand Shoe</a></td>
@@ -92,6 +112,8 @@
                 <td>$95</td>
                 <td>TRUE</td>
                 <td>Big Bill's Leather</td>
+                <td>The Trigand Shoe is the epitome of the artisian shoe movement. Made from locally sourced Alberta leather.</td>
+                <td>images/shoes/trigand_shoe.jpg</td>
             </tr>
             <tr>
                 <td><a href="shoe2.html">Leather Shoe</a></td>
@@ -99,8 +121,249 @@
                 <td>$129</td>
                 <td>TRUE</td>
                 <td>Big Bill's Leather</td>
+                <td>The swiss army knife of shoes, these bad boys are at home in the board room, class room, or dance floor. Made from locally sourced Montana Leather.</td>
+                <td>images/shoes/leather_shoe.jpg</td>
+            </tr>
+            <tr>
+                <form enctype="multipart/form-data" action="#" method="post">
+                    <td>
+                        <label>
+                            <input type="text" name="productName" value="Enter product name..." />
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="text" name="cost" value="Enter cost" size="8" />
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="text" name="price" value="Enter price" size="8" />
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            Available?
+                            <select name="availability">
+                                <option value="true">true</option>
+                                <option value="false">false</option>
+                            </select>
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            Artisan
+                            <select name="artisans">
+                                <option value="Jenny's Knitting Shop">Jenny's Knitting Shop</option>
+                                <option value="Big Bill's Leather">Big Bill's Leather</option>
+                            </select>
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <textarea name="description" cols="40" rows="5">Product Description</textarea>
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            Upload Image
+                            <input type="file" name="file" />
+                        </label>
+                    </td>
             </tr>
         </table>
+        <label>
+            <input type="submit" name="new-product" value="Add new product" />
+        </label>
+        </form>
+        <p><a href="#">Back to top</a></p>
+        <h3 id="customers">Customers</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone number</th>
+                <th>Billing Address</th>
+                <th>Billing City</th>
+                <th>Billing Province</th>
+                <th>Billing Country</th>
+                <th>Shipping Address</th>
+                <th>Shipping City</th>
+                <th>Shipping Province</th>
+                <th>Shipping Country</th>
+                <th>Postal Code</th>
+                <th>Actions</th>
+            </tr>
+
+            <tr>
+                <td>John Smith</td>
+                <td>john@smith.com</td>
+                <td>122-333-4523</td>
+                <td>123 Main St.</td>
+                <td>Winnipeg</td>
+                <td>MB</td>
+                <td>Canada</td>
+                <td>123 Main St.</td>
+                <td>Winnipeg</td>
+                <td>MB</td>
+                <td>Canada</td>
+                <td>R2C 0A1</td>
+                <td><a href="#">Delete</a><br /><a href="#">Reset Password</a></td>
+            </tr>
+            <tr>
+                <td>Jane Thompson</td>
+                <td>jane@thompson.com</td>
+                <td>565-333-4566</td>
+                <td>45 Staff ave</td>
+                <td>Banff</td>
+                <td>BC</td>
+                <td>Canada</td>
+                <td>2170 Cornwall AVE</td>
+                <td>Vancouver</td>
+                <td>BC</td>
+                <td>Canada</td>
+                <td>V9K 2J9</td>
+                <td><a href="#">Delete</a><br /><a href="#">Reset Password</a></td>
+            </tr>
+            <tr>
+                <td>Bobby Coleman</td>
+                <td>bobby@coleman.com</td>
+                <td>555-666-7777</td>
+                <td>#2-5567 5th St.</td>
+                <td>Saskatoon</td>
+                <td>SK</td>
+                <td>Canada</td>
+                <td>#2-5567 5th St.</td>
+                <td>Saskatoon</td>
+                <td>SK</td>
+                <td>Canada</td>
+                <td>S7K 4X7</td>
+                <td><a href="#">Delete</a><br /><a href="#">Reset Password</a></td>
+            </tr>
+            <tr>
+                <td>Julie Thompson</td>
+                <td>julie@thompson.com</td>
+                <td>684-899-0909</td>
+                <td>2 Brown St.</td>
+                <td>Prince George</td>
+                <td>BC</td>
+                <td>Canada</td>
+                <td>2 Brown St.</td>
+                <td>Prince George</td>
+                <td>BC</td>
+                <td>Canada</td>
+                <td>V8J 3K7</td>
+                <td><a href="#">Delete</a><br /><a href="#">Reset Password</a></td>
+            </tr>
+            <tr>
+                <td>Max Findeman</td>
+                <td>max@findeman.com</td>
+                <td>453-645-3453</td>
+                <td>5 2nd AVE</td>
+                <td>Portland</td>
+                <td>OR</td>
+                <td>USA</td>
+                <td>5 2nd AVE</td>
+                <td>Portland</td>
+                <td>OR</td>
+                <td>USA</td>
+                <td>58473</td>
+                <td><a href="#">Delete</a><br /><a href="#">Reset Password</a></td>
+            </tr>
+        </table>
+        <p><a href="#">Back to top</a></p>
+        <h3 id="artisans">Artisans</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Contact Person</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>Province</th>
+                <th>Country</th>
+                <th>Postal Code</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>Jenny's Kitting Shop</td>
+                <td>Jenny Dopplebock</td>
+                <td>44 Field Lane</td>
+                <td>Nanaimo</td>
+                <td>BC</td>
+                <td>Canada</td>
+                <td>V8K 3H9</td>
+                <td>778-980-7382</td>
+                <td>jenny@jennysknitting.com</td>
+                <td><a href="#">Delete</a><br /><a href="#">Reset Password</a></td>
+            </tr>
+            <tr>
+                <td>Big Bill's Leather</td>
+                <td>Bill Johnson</td>
+                <td>47 Circle Rd.</td>
+                <td>Calgary</td>
+                <td>AB</td>
+                <td>Canada</td>
+                <td>A8K 3J9</td>
+                <td>948-390-2039</td>
+                <td>bill@billsleather.com</td>
+                <td><a href="#">Delete</a><br /><a href="#">Reset Password</a></td>
+            </tr>
+            <tr>
+                <form enctype="multipart/form-data" action="#" method="post">
+                    <td>
+                        <label>
+                            <input type="text" name="manufacturerName" value="Enter name..." size="12"/>
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="text" name="contactPerson" value="Enter contact..." size="12"/>
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="text" name="address" value="Address..." size="12"/>
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="text" name="city" value="City..." size="12"/>
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="text" name="province" value="Province..." size="12"/>
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="text" name="country" value="Country..." size="12"/>
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="text" name="postalCode" value="Postal Code..." size="12"/>
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="text" name="phoneNumber" value="Phone Number..." size="12"/>
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="text" name="email" value="Email..." size="12"/>
+                        </label>
+                    </td>
+                </tr>
+        </table>
+        <label>
+            <input type="submit" name="new-artisan" value="Add new artisan" size="12"/>
+        </label>
+        </form>
+        <p><a href="#">Back to top</a></p>
     </div>
     <!--End of Content Area-->
     <!--Footer-->
