@@ -144,10 +144,12 @@
     <Content Include="shoe-category.html" />
     <Content Include="shoes1.html" />
     <Content Include="shoes2.html" />
+    <Content Include="checkout.html" />
     <Content Include="shopping-cart-empty.html" />
     <Content Include="sweater-category.html" />
     <Content Include="sweater1.html" />
     <Content Include="sweater2.html" />
+    <Content Include="purchased.html" />
     <Content Include="template.html" />
     <Content Include="shopping-cart.html" />
     <Content Include="packages.config" />
