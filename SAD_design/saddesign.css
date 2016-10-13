@@ -11,14 +11,16 @@ body {
     margin: 0;
     background-color: #008080;
 }
-#header img {
+#logo {
     padding: 0.5em;
     position: absolute;
+    width: 200px;
 }
 #shoppingCart{
     position: absolute;
     right: 5em;
     top: 4em;
+    width: 100px; 
 } 
 #header form {
     position: absolute;
